@@ -1,0 +1,14 @@
+{% extends './layout.html' %}
+
+{% block Title %} Home {% endblock Title %}
+
+{% block CSS %}
+
+{% endblock %}
+
+{% block Body %}
+
+<h1> Bienvenido {{username}}</h1>
+<a href=" {{url_for('cerrar')}} "> Cerrar sesion </a>
+
+{% endblock %}
