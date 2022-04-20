@@ -3,7 +3,7 @@ from unicodedata import name
 from flask import Flask, redirect, render_template, request, session, url_for
 import mysql.connector
 
-conn = mysql.connector.connect(host="bdjynruf6ziskqxualjp-mysql.services.clever-cloud.com", port="3306", user="ugvjlyd2h3xtnj4v", password="KFYYYo4kzDHYE2AnaZie", database="bdjynruf6ziskqxualjp")
+conn = mysql.connector.connect(host="bdjynruf6ziskqxualjp-mysql.services.clever-cloud.com", port="3306", user="", password="", database="bdjynruf6ziskqxualjp")
 cursor= conn.cursor()
 
 app = Flask(__name__)
