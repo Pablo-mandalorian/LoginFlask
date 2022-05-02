@@ -1,0 +1,37 @@
+{% extends './layout.html' %}
+
+{% block Title %} Registro de usuarios {% endblock Title %}
+
+{% block CSS %}
+
+{% endblock %}
+
+{% block Body %}
+
+<div class="title" id="item1">
+    <h1>Registro de usuarios<h1>
+            <h4>Ingresa los datos correspondientes</h4>
+</div>
+<div class="input-area" id="item2">
+    <form action="{{ url_for('signin') }}" method="get">
+        <label>Nombre:</label><br>
+        <input type="text" name="username" id="" placeholder="Nombres y Apellido"><br>
+        <label> Numero de Empleado:</label><br>
+        <input type="text" name="id_user" id="" placeholder="Numero de empleado"><br>
+        <label> Contraseña:</label><br>
+        <input type="password" name="password" id="" placeholder="ingresa la contraseña"><br>
+        <label>Ingresa nuevamente la contraseña</label><br>
+        <input type="password" name="aceptpassword" id="" placeholder="ingresa la contraseña">
+
+</div>
+<div class="buttons-area" id="item3">
+    <h5>Selecciona el rol que desempeñas</h5>
+    <input type="radio" name="options" id="opcionbajo">CAPTURADOR
+    <input type="radio" name="options" id="opcionmedio">ADMINISTRADOR
+    <br>
+    <br><input type="submit" value="Registrar"><br><br>
+    has realizado tu registro,para ingresar <a href="#">REGRESAR</a>
+    </form>
+</div>
+
+{% endblock %}
